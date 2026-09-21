@@ -12,7 +12,10 @@ plots without executing Python.
 ## Open in Colab
 
 - **Upload:** download the `.ipynb`, go to [colab.research.google.com](https://colab.research.google.com), File → Upload notebook.
-- **From GitHub (once this pack is published):** `https://colab.research.google.com/github/<owner>/<repo>/blob/main/notebooks/<notebook>.ipynb`.
+- **From GitHub (one click):** `https://colab.research.google.com/github/dinbav/digital-experiments-course/blob/main/notebooks/<notebook>.ipynb` — e.g. the
+  [confounding exercise](https://colab.research.google.com/github/dinbav/digital-experiments-course/blob/main/notebooks/unit-02-confounding-exercise.ipynb).
+- **Worked demo:** the same name with `-demo`, under `solutions/` — e.g. the
+  [confounding demo](https://colab.research.google.com/github/dinbav/digital-experiments-course/blob/main/solutions/unit-02-confounding-demo.ipynb).
 - **Acceptance test:** Runtime → Restart and run all.
 
 The first code cell has a **commented-out** `# %pip install -q numpy pandas scipy statsmodels matplotlib`.
