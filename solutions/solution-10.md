@@ -4,9 +4,13 @@
 
 ## Notebook (Part A)
 
-The demo matches tests to metric types, reads a CI as a ship range, and walks a
-Simpson's-paradox reversal on simulated admissions-style data. Students should see
-how an aggregate can reverse within pre-specified subgroups.
+The demo notebook is the reference (seed 42). Key results:
+
+- Order value: lift about **$2.1**, 95% CI roughly **$0.9 to $3.3**, p < 0.001 - significant, and the whole interval is below the $5 threshold, so the ship rule says **do not ship**. The bootstrap CI agrees.
+- CTR: the ratio of sums gives a gap of about **+0.011**, about twice the mean-of-per-user-ratios gap; the user-level bootstrap CI is roughly +0.009 to +0.014.
+- Ramp-up (Simpson's paradox): pooled, the new flow looks like **+3.8 points**; within each day it **loses about 1 point**. The treatment arm is mostly high-converting Saturday traffic.
+
+Students should see how pooling across periods with different allocation reverses the answer, and write a three-way ship rule (launch / do not ship / hold).
 
 ## Model answer (Part B)
 

@@ -4,9 +4,14 @@
 
 ## Notebook (Part A)
 
-The demo runs an SRM chi-square check, shows an A/A test producing a "significant"
-difference at the expected rate, and plots an effect that fades after week one
-(novelty). Students should say what each check catches.
+The demo notebook is the reference (seed 42). Key results:
+
+- The logged data shows a **+2.4-point** lift, p < 0.001, for a page with **no** true effect.
+- The SRM check fails decisively (10,012 vs 7,647 logged users; p around 1e-70). The browser breakdown shows the missing old-browser (low-converting) treated users.
+- A/A simulations come out significant about **5-6%** of the time.
+- Weekly lift falls from about **+3.4** to **+0.4** points (novelty); the lasting effect is +0.5.
+
+Students should say what each check catches, and that a failed SRM means stop - not "analyse the clean segment". The MSN carousel case in the framing cell shows the opposite direction (a broken split hiding a real win).
 
 ## Model answer (Part B)
 

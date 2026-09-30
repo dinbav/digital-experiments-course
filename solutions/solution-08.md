@@ -5,10 +5,11 @@
 
 ## Notebook (Part A)
 
-Sample size is tied to a stated business MDE, which differs from the calculator's
-default. CUPED demo shows variance reduction from pre-experiment data; the
-peeking/sequential demo shows repeated looks inflating the false-positive rate far
-above the labelled alpha, and a sequential method fixing it.
+The demo notebooks are the reference (seed 42).
+
+- **Power/MDE:** the 1-point calculator default needs 17,166 users per arm, but has only **29% power** for the 0.5-point lift finance would ship. The business MDE needs **67,493 per arm** (3.9x) - about **7 weeks** at 20,000 users a week. A 1,000-run simulation confirms ~80% power.
+- **CUPED (optional):** SE falls from 0.20 to 0.15, a **44% variance reduction**; CUPED reaches 80% power with about half the users. With weak history the reduction is under 1%.
+- **Peeking (optional):** daily peeking at a fixed p < 0.05 stops **22%** of A/A tests; one final look 5%; the mSPRT under 1%. With a real effect the mSPRT has less power than one final look (65% vs 90%) but stops around day 9 instead of day 14.
 
 ## Model answer (Part B)
 

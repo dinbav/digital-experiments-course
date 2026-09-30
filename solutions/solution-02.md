@@ -4,10 +4,14 @@
 
 ## Notebook (Part A)
 
-The demo notebook is the reference. Key results students should reproduce/read:
-the naive estimate stays biased as `n` grows (the CI narrows around the wrong
-number), and random assignment recovers the true effect. The spoiler cell in the
-exercise notebook holds the solution code; every `assert` should pass.
+The demo notebook is the reference (seed 42). Key results students should reproduce or read:
+
+- Naive effect about **+4.0 points** although the true effect is zero (paid traffic is 43% of the treatment arm vs 19% of control).
+- Within-channel (stratified) effect about **-0.4 points** - the fake lift disappears.
+- At 100,000 sessions the naive effect is still about +4 points with a 95% CI half-width of only 0.5 points: precision, not correctness.
+- With coin-flip assignment the paid share balances (about 35% in each arm) and the naive comparison lands near zero.
+
+Every `assert` in the exercise passes with the spoiler code, and with any correct solution across random seeds.
 
 ## Model answer (Part B)
 

@@ -4,9 +4,14 @@
 
 ## Notebook (Part A)
 
-The demo shows a user-level split inflating the effect under a shared resource,
-and a switchback/block schedule recovering a trustworthy estimate. Students should
-note the direction and rough size of the naive bias.
+The demo notebook is the reference (seed 42). Key results:
+
+- User-level A/B estimate about **+9.5 points**; the real effect of launching (all riders vs none) about **+3.2 points** - the A/B test overstated it about **3x**, in the direction that flatters the treatment.
+- Control riders booked **27.8%** during the A/B test, below the 29.1% they get with no test: treated riders took drivers from them.
+- The 28-day switchback estimates about **+3.9 points**, close to the truth.
+- Treating rider-days as independent understates the switchback SE about **2.7x**; the honest 95% CI is roughly +1.8 to +6.0 points.
+
+Students should name the direction and rough size of the naive bias, and why the wider interval is the honest one.
 
 ## Model answer (Part B)
 

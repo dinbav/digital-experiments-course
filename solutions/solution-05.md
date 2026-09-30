@@ -10,6 +10,15 @@ with a reason; the principal threat is the right one for the chosen design
 natural experiment) and there's a plan to probe it; the ethics line addresses
 participant awareness.
 
+## Notebook (optional)
+
+The DiD demo is the reference (seed 42): after-only **+12.1** and before-after
+**+9.4** against a true effect of +5; DiD **+4.9** (95% CI about +4.3 to +5.4)
+with a placebo effect near zero. With a treated-only trend, DiD reads **+7.6**
+and the placebo test flags it (about +1.3, CI excluding zero). Students who ran
+it should say which panel their project resembles and how they would run the
+placebo check on their own pre-period data.
+
 ## Common mistakes
 
 - Choosing "A/B test" first, then reverse-justifying — design should follow the constraint.

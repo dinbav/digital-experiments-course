@@ -3,6 +3,8 @@
 **Feeds:** Decisions 5–8, stressed — only if your project's treatment is an AI system
 **Type:** Code + written · **optional**
 **Notebook:** [`v2-ai-eval-exercise.ipynb`](../notebooks/v2-ai-eval-exercise.ipynb)
+**Optional lab:** [`v2-ai-eval-real-model.ipynb`](../notebooks/v2-ai-eval-real-model.ipynb) —
+the same checks on real open-source models in Colab (free GPU, no API key, about 5 minutes)
 **Deliverable:** completed notebook (or no-code answers) + a decision table for an
 AI treatment.
 
