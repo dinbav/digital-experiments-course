@@ -4,9 +4,14 @@
 
 ## Notebook (Part A)
 
-Students should build a weighted composite and exhibit a variant that wins the
-primary metric while failing the composite (the news-site reversal). The demo
-shows the weight flip that reverses the ship decision.
+The demo notebook is the reference (seed 42). Key results:
+
+- Add-to-cart (the primary metric) **+27%**; checkout **-18.5%** (95% CI about -24% to -13%); browsing unchanged.
+- Revenue-heavy OEC weights score the treatment **1.14** (treatment wins); conversion-heavy weights score it **0.94** (control wins) - the weight flip.
+- The guardrail "checkout may not fall more than 5%" **fails**: the variant wins its primary metric and still cannot ship as is.
+- Clicks per user **+38%** vs clicks per session **+8%**: the denominator changes the story.
+
+Strong answers say the next step is diagnosing why full carts stop at checkout, not "ship" or "kill".
 
 ## Model answer (Part B)
 
